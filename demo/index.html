@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ChotkiyModal</title>
+
+		<link rel="stylesheet" href="dist/demo.css" />
+		<script type="module" src="main.js"></script>
+	</head>
+
+	<body>
+		<main class="container">
+			<button class="open-modal-btn elegant-btn" data-js-open-modal="#Modal">
+				Модальное окно с длинным текстом
+			</button>
+
+			<button class="open-modal-btn elegant-btn" data-js-open-modal="#Modal2">
+				Простое модальное окно
+			</button>
+
+			<button class="open-modal-btn elegant-btn" data-js-open-modal="#Modal3">
+				Модальное окно с видео
+			</button>
+		</main>
+
+		<!-- ************************************************* -->
+
+		<!-- МОДАЛКА 1 -->
+		<div class="chotkiyModal close" id="Modal">
+			<div class="chotkiyModal__window">
+				<div class="chotkiyModal__content">
+					<button class="chotkiyModal__btn-close" data-js-close-modal></button>
+					<h2 class="chotkiyModal__title">Модальное окно с длинным текстом</h2>
+
+					<p class="chotkiyModal__info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita at
+						accusantium, laborum consequatur voluptas doloremque quis
+						necessitatibus provident nisi id eligendi sequi earum possimus rerum
+						recusandae sapiente explicabo iusto excepturi. Recusandae quaerat
+						quis eos fugit dolores harum architecto quidem, possimus
+						consequatur! Quisquam earum nulla possimus, laborum, maiores,
+						officia cupiditate enim consectetur nesciunt veniam tempora labore
+						inventore dolores reprehenderit? Mollitia, similique. Quaerat soluta
+						aperiam itaque saepe dolores quidem labore obcaecati, laudantium rem
+						modi optio non ipsum maxime neque beatae. Reiciendis, rem rerum! Ea,
+						aliquam. Distinctio voluptate ex fuga eum ad id. Atque, quisquam
+						quidem doloribus laboriosam natus nostrum, velit consequuntur
+						eveniet voluptates aperiam ullam dolores? Dignissimos asperiores
+						alias ducimus totam ex suscipit eaque aperiam nulla facilis
+						repellat. Asperiores voluptas itaque aperiam. Obcaecati pariatur
+						sunt minus quibusdam minima est, deserunt veniam fugiat quas
+						incidunt at esse nesciunt doloribus. Hic expedita, voluptates totam
+						quisquam autem deserunt vero aperiam labore, asperiores deleniti
+						quasi natus.
+					</p>
+
+					<!-- ******************************************************** -->
+
+					<picture>
+						<source
+							srcset="
+								./images/programming-990.webp   990w,
+								./images/programming-1485.webp 1485w,
+								./images/programming-1980.webp 1980w,
+								./images/programming-2970.webp 2970w
+							"
+							sizes="(max-width: 990px) 100vw, 990px"
+							type="image/webp"
+						/>
+
+						<source
+							srcset="
+								./images/programming-990.jpg   990w,
+								./images/programming-1485.jpg 1485w,
+								./images/programming-1980.jpg 1980w,
+								./images/programming-2970.jpg 2970w
+							"
+							sizes="(max-width: 990px) 100vw, 990px"
+							type="image/jpeg"
+						/>
+
+						<!-- Фолбэк для старых браузеров -->
+						<img
+							class="chotkiyModal__img"
+							src="./images/programming-990.jpg"
+							width="100%"
+							height="auto"
+							alt=""
+							loading="lazy"
+							decoding="async"
+							fetchpriority="low"
+						/>
+					</picture>
+
+					<!-- ******************************************************** -->
+					<p class="chotkiyModal__info">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+						reiciendis iusto vero perferendis? Totam nobis, iste eius illum
+						dolores repudiandae natus, voluptatem illo quidem, quisquam sapiente
+						quae ullam odit in. Harum optio tempora beatae necessitatibus,
+						possimus nisi saepe, a repudiandae consectetur rem ducimus pariatur
+						vero veniam molestiae ipsam laboriosam alias officiis porro hic
+						neque. Voluptas consectetur magnam libero aperiam vel? Corrupti
+						illum excepturi magni quas ab temporibus. Quam, laborum eveniet
+						praesentium sed ab blanditiis reiciendis natus mollitia libero quasi
+						quia expedita, molestias neque amet aut dolore corrupti maxime
+						quisquam vitae. Ex, quidem id. Accusamus officiis neque laudantium
+						ratione nobis itaque minus eveniet maiores. Nam eum ipsam commodi
+						recusandae natus earum eligendi est nihil veritatis, veniam
+						voluptatem ea, fugit nulla eius!
+					</p>
+
+					<p class="chotkiyModal__info">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+						delectus necessitatibus suscipit. Laudantium, unde minima! Aliquam
+						voluptate soluta cumque. Temporibus sit nisi optio deserunt at sunt
+						iusto nulla eligendi ratione! Obcaecati, qui optio voluptatum
+						sapiente in beatae laborum atque cupiditate doloremque praesentium
+						neque asperiores temporibus dignissimos modi laboriosam assumenda
+						mollitia hic possimus similique, quod impedit tempora tenetur odit?
+						Accusamus, officia. A accusamus optio nemo accusantium id amet
+						impedit quod quos et fugiat laudantium deleniti assumenda
+						reprehenderit molestias voluptatibus tempora quis nostrum possimus,
+						magni, repudiandae delectus aliquam ipsum nihil aliquid. Nobis. Qui
+						ad est cum eum nostrum optio fuga neque magnam ducimus? Fugiat quis
+						accusantium tempora rerum velit sint illo at incidunt, molestiae
+						neque suscipit odio nemo voluptate quaerat. Saepe, assumenda!
+						Commodi libero quod laudantium, rem laboriosam sint, nam impedit
+						autem, eveniet doloremque facilis ex! Illo temporibus odit officia
+						alias fuga. Inventore nemo odit molestias perspiciatis ipsa delectus
+						in voluptatibus et.
+					</p>
+
+					<button class="elegant-btn" data-js-open-modal="#Modal2">
+						Простое модальное окно
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- МОДАЛКА 2 -->
+		<div class="chotkiyModal close" id="Modal2">
+			<div class="chotkiyModal__window">
+				<div class="chotkiyModal__content">
+					<h2 class="chotkiyModal__title">Простое модальное окно</h2>
+
+					<p class="chotkiyModal__info">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+						voluptates at mollitia minus. Sequi esse dolore porro ducimus
+						perspiciatis, voluptate nostrum. Facilis ut facere est voluptatibus
+						non voluptatum, fugiat quas.
+					</p>
+
+					<div class="chotkiyModal__btns-wrapper">
+						<button
+							class="chotkiyModal__btn glown-button"
+							data-js-open-modal="#Modal"
+						>
+							Модальное окно с длинным текстом
+						</button>
+						<button
+							class="chotkiyModal__btn glown-button"
+							data-js-open-modal="#Modal3"
+						>
+							Модальное окно с видео
+						</button>
+						<button
+							class="chotkiyModal__btn chotkiyModal__btn--close glown-button glown-button-close"
+							data-js-close-modal
+						>
+							Закрыть
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- МОДАЛКА 3 -->
+		<div class="chotkiyModal close" id="Modal3">
+			<div class="chotkiyModal__window">
+				<button class="" data-js-close-modal>Закрыть</button>
+
+				<!--  -->
+
+				<iframe
+					width="100%"
+					height="500px"
+					src="https://www.youtube.com/embed/RqJVa0fl01w?enablejsapi=1&amp;rel=0&amp;showinfo=0"
+					title="YouTube video player"
+					frameborder="0"
+					allow="
+						accelerometer;
+						autoplay;
+						clipboard-write;
+						encrypted-media;
+						gyroscope;
+						picture-in-picture;
+						web-share;
+					"
+					allowfullscreen
+					tabindex="0"
+				></iframe>
+				<input
+					tabindex="0"
+					aria-label="Press tab to return to close button"
+					style="
+						position: absolute;
+						opacity: 0;
+						height: 1px;
+						width: 1px;
+						pointer-events: none;
+					"
+				/>
+			</div>
+		</div>
+
+		<!-- ************************************************* -->
+	</body>
+</html>

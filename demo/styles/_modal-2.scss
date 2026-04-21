@@ -1,0 +1,81 @@
+$width-modal: 700px;
+
+#Modal2 {
+	.chotkiyModal {
+		&__window {
+			width: $width-modal;
+			max-width: 100%;
+			margin: auto;
+			margin-left: auto;
+			border: none;
+			border-radius: 20px;
+			background: $white-transparent;
+			backdrop-filter: blur(10px);
+
+			box-shadow: 0 8px 32px $blue-gray, inset 0px 0px 4px 1px $blue-transparent;
+		}
+
+		&__content {
+			padding: 20px;
+		}
+
+		&__title {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: $primary-blue;
+			font-size: clamp(23px, 18.41px + 1.18vw, 27px);
+			font-weight: 600;
+			margin: 0;
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+			text-align: center;
+		}
+
+		&__info {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: $primary-blue;
+			line-height: 1.6;
+			margin-bottom: 25px;
+
+			border-bottom: 1px solid $black-transparent;
+			padding-bottom: 15px;
+			margin-bottom: 20px;
+
+			@media (width <= 730px) {
+				text-align: center;
+			}
+		}
+
+		&__btns-wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto auto;
+			gap: 10px;
+		}
+
+		&__btn {
+			grid-row: 1;
+
+			&--close {
+				grid-column: 1 / -1;
+				grid-row: 2;
+			}
+		}
+
+		@media (width <= 768px) {
+			&__btns-wrapper {
+				grid-template-columns: 1fr;
+			}
+
+			&__btn,
+			&__btn--close {
+				grid-column: 1;
+				grid-row: auto;
+			}
+		}
+	}
+}
+
+body:has(#Modal2.open) .shadow {
+	background: $gray-blue-transparent;
+	backdrop-filter: blur(3px);
+}

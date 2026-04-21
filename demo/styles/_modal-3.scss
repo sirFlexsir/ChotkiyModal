@@ -1,0 +1,12 @@
+$width-modal: 800px;
+
+#Modal3 {
+	.chotkiyModal {
+		&__window {
+			max-width: 100%;
+			width: 900px;
+			margin: auto;
+			margin-left: auto;
+		}
+	}
+}

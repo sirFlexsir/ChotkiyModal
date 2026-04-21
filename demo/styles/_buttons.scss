@@ -1,0 +1,73 @@
+.elegant-btn {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border: none;
+	border-radius: 12px;
+	padding: 12px 32px;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			90deg,
+			transparent,
+			rgba(255, 255, 255, 0.2),
+			transparent
+		);
+		transition: left 0.5s ease;
+	}
+
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+
+		&::before {
+			left: 100%;
+		}
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+.glown-button {
+	padding: 10px 24px;
+	border: none;
+	border-radius: 12px;
+	background: $light-blue;
+	color: $primary-blue;
+	font-size: 0.9rem;
+	cursor: pointer;
+	box-shadow: 0 8px 32px $shadow-blue, inset 0px 0px 4px 1px $accent-blue;
+	transition: all 0.3s ease;
+
+	border: 1px solid $primary-blue-light;
+
+	&:hover {
+		background: $light-blue-hover;
+		transform: translateY(-1px);
+	}
+}
+
+.glown-button-close {
+	background: $red-light;
+	box-shadow: 0 8px 32px $shadow-pink, inset 0px 0px 4px 1px $accent-pink;
+
+	&:hover {
+		background: $pink-light;
+		transform: translateY(-1px);
+	}
+}

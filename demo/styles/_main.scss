@@ -1,0 +1,33 @@
+.chotkiyModal {
+	position: absolute;
+	inset: 0;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	z-index: 99;
+	transition: $transition-duration;
+	// transition: none !important;
+}
+
+// -----------------------
+
+.open {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+.close {
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+
+.shadow {
+	position: absolute;
+	background-color: $color-black-alpha-46; /* В ПЕРЕМЕННУЮ */
+	inset: 0;
+	z-index: 98;
+	/* В ПЕРЕМЕННУЮ */
+	transition: $transition-duration;
+}
